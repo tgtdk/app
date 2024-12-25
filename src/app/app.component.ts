@@ -18,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DxDropDownBoxModule, DxDataGridModule } from 'devextreme-angular';
 import { DxTreeViewComponent, DxTreeViewModule, DxTreeViewTypes } from 'devextreme-angular/ui/tree-view';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { LearnDirectiveComponent } from './learn-directive/learn-directive.component';
+import { BasicRedEleDirective } from './learn-directive/Directies basic learning/basic-red-ele.directive';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -222,7 +224,6 @@ export class AppComponent {
      CommonModule
 
 
-
   ],
   declarations: [AppComponent,
 
@@ -230,7 +231,9 @@ export class AppComponent {
     Sib1Component, 
     Sib2Component,
     SiblingAComponent, 
-    SiblingBComponent
+    SiblingBComponent,
+    LearnDirectiveComponent,
+    BasicRedEleDirective
   ],
   bootstrap: [AppComponent],
 })
