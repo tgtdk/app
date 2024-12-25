@@ -4,8 +4,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-sibling-b',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './sibling-b.component.html',
   styles: ``
 })

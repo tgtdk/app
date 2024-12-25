@@ -3,8 +3,6 @@ import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-sibling-a',
-  standalone: true,
-  imports: [],
   templateUrl: './sibling-a.component.html',
   styles: ``
 })

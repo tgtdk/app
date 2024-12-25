@@ -3,8 +3,6 @@ import { SService } from '../s.service';
 
 @Component({
   selector: 'app-hello',
-  standalone: true,
-  imports: [],
   template: '<h1>Hello {{name}}!</h1><h1>Hello {{name2}}!</h1>',
   styles: [`h1 { font-family: Lato; }`]
 })

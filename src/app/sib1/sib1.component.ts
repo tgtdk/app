@@ -3,8 +3,6 @@ import { CommonSvcService } from '../common-svc.service';
 
 @Component({
   selector: 'app-sib1',
-  standalone: true,
-  imports: [],
   templateUrl: './sib1.component.html',
   styles: ``
 })

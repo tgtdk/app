@@ -1,0 +1,5 @@
+.dx-autocomplete-popup .dx-scrollable-content {
+    max-height: 300px; /* Adjust the height */
+    overflow-y: auto;
+  }
+  
