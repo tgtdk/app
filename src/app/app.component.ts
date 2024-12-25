@@ -20,6 +20,7 @@ import { DxTreeViewComponent, DxTreeViewModule, DxTreeViewTypes } from 'devextre
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { LearnDirectiveComponent } from './learn-directive/learn-directive.component';
 import { BasicRedEleDirective } from './learn-directive/Directies basic learning/basic-red-ele.directive';
+import { ChangeEleValDirective } from './learn-directive/Directies basic learning/change-ele-val.directive';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -233,7 +234,8 @@ export class AppComponent {
     SiblingAComponent, 
     SiblingBComponent,
     LearnDirectiveComponent,
-    BasicRedEleDirective
+    BasicRedEleDirective,
+    ChangeEleValDirective
   ],
   bootstrap: [AppComponent],
 })
