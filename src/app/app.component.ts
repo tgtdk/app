@@ -1,26 +1,5 @@
 import { Component, NgModule, ViewChild } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { SService } from './s.service';
-import { FormsModule } from '@angular/forms';
-import { HelloComponent } from './hello/hello.component';
-import { CommonSvcService } from './common-svc.service';
-import { Sib1Component } from './sib1/sib1.component';
-import { Sib2Component } from './sib2/sib2.component';
-import { StoreServiceService } from './store-service.service';
-import { Subject } from 'rxjs';
-import { CommonModule } from '@angular/common';
-import { SiblingAComponent } from './sibling-a/sibling-a.component';
-import { SiblingBComponent } from './sibling-b/sibling-b.component';
-import { DxAutocompleteModule, DxButtonModule, DxSelectBoxModule, DxTemplateModule } from 'devextreme-angular'; // Import DxSelectBoxModule
-import { Routes } from '@angular/router';
-import { DxAutoComplateComponent } from './dx-auto-complate/dx-auto-complate.component';import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
-import { DxDropDownBoxModule, DxDataGridModule } from 'devextreme-angular';
-import { DxTreeViewComponent, DxTreeViewModule, DxTreeViewTypes } from 'devextreme-angular/ui/tree-view';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { LearnDirectiveComponent } from './learn-directive/learn-directive.component';
-import { BasicRedEleDirective } from './learn-directive/Directies basic learning/basic-red-ele.directive';
-import { ChangeEleValDirective } from './learn-directive/Directies basic learning/change-ele-val.directive';
+import { DxTreeViewComponent, DxTreeViewTypes } from 'devextreme-angular/ui/tree-view';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -208,37 +187,3 @@ export class AppComponent {
   }
 }
 
-
-
-@NgModule({
-  imports: [
-    BrowserModule,
-    DxTreeViewModule,
-    DxDropDownBoxModule,
-    HttpClientModule,
-    DxDataGridModule,
-    RouterOutlet, 
-    FormsModule,
-    DxButtonModule,
-    DxSelectBoxModule, 
-    DxAutocompleteModule,
-     CommonModule
-
-
-  ],
-  declarations: [AppComponent,
-
-    HelloComponent,
-    Sib1Component, 
-    Sib2Component,
-    SiblingAComponent, 
-    SiblingBComponent,
-    LearnDirectiveComponent,
-    BasicRedEleDirective,
-    ChangeEleValDirective
-  ],
-  bootstrap: [AppComponent],
-})
-export class AppModule { }
-
-platformBrowserDynamic().bootstrapModule(AppModule);
