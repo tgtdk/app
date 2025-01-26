@@ -21,6 +21,7 @@
     "@angular/router": "^17.3.0",
     "devextreme": "24.1.6",
     "devextreme-angular": "24.1.6",
+    "json-server": "^1.0.0-beta.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
